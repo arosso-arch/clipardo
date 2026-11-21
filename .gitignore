@@ -1,0 +1,46 @@
+# --- secretos: NUNCA al repo ---
+publicador/tokens.env
+publicador/tokens.env.*
+!publicador/tokens.env.example
+*.env
+!*.env.example
+
+# --- entorno y herramientas pesadas ---
+.venv/
+tools/*
+!tools/fonts/
+node_modules/
+__pycache__/
+*.pyc
+
+# --- datos que genera el sistema ---
+jobs/
+clips/
+inbox/
+tmp/
+work/
+reportes/
+referencias/
+comunidad/
+capcut_borradores/
+marca/
+calendario/*
+!calendario/calendario.csv
+!calendario/publicacion.csv
+calendario.html
+estado-hoy.md
+pendientes.md
+publicador/publicaciones.log
+*.log
+*.lock
+
+# --- Remotion ---
+remotion-clipardo/out/
+remotion-clipardo/public/*.mp4
+remotion-clipardo/*.props.json
+remotion-clipardo/props*.json
+*.bak
+*.bak-*
+
+# --- Claude Code local ---
+.claude/settings.local.json

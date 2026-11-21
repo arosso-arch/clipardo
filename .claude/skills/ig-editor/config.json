@@ -1,0 +1,275 @@
+{
+  "salida": {
+    "ancho": 1080,
+    "alto": 1920,
+    "fps": 30,
+    "crf": 19,
+    "preset": "medium",
+    "maxrate": "12M",
+    "bufsize": "24M",
+    "audio_bitrate": "192k",
+    "crf_base": 12
+  },
+  "silencios": {
+    "recortar": true,
+    "hueco_min_s": 0.8,
+    "margen_s": 0.2,
+    "umbral_db_bajo_mediana": 12
+  },
+  "layout": {
+    "modo": "auto",
+    "muestras_por_s": 8,
+    "score_min_cara": 0.7,
+    "min_frac_cara": 0.5,
+    "min_frac_dos_caras": 0.4,
+    "alto_panel_en_caras": 4.5,
+    "hablante": {
+      "min_palabras": 3,
+      "min_s": 0.8,
+      "anticipo_s": 0.15
+    },
+    "camara": {
+      "zona_muerta": 0.06,
+      "suavizado": 0.25,
+      "aspecto_recuadro": 1.3333,
+      "fit_top_frac": 0.18
+    },
+    "mosaico": {
+      "min_recuadros": 3,
+      "huecos_max_brillo": 25,
+      "seguir_hablante": true,
+      "aspecto_zoom": 1.0,
+      "min_frac_protagonista": 0.18,
+      "solo_min_s": 3.0,
+      "otro_min_s": 2.5,
+      "min_plano_s": 2.0,
+      "alto_en_caras": 3.6
+    },
+    "reaccion": {
+      "activar": true,
+      "umbral": 0.08,
+      "hueco_max_s": 0.3,
+      "min_s": 0.6,
+      "dur_min_s": 1.5,
+      "max_paneles": 2
+    },
+    "segunda_persona": {
+      "activar": true,
+      "se_fue_s": 1.0
+    },
+    "gaming": {
+      "cara_max_frac": 0.2,
+      "alto_camara": 760,
+      "ancho_en_caras": 2.6,
+      "margen_webcam_en_caras": 2.4
+    },
+    "gta": {
+      "alto_camara": 560,
+      "tarjeta": {
+        "activo": true,
+        "ancho_frac": 0.74,
+        "aspecto": 1.72,
+        "radio": 42,
+        "solape_frac": 0.16,
+        "oscuro": 0.55,
+        "_nota": "2026-11-20 estilo @elcokismo: webcam como tarjeta redondeada sobre el juego (fondo desenfocado). Por clip: camara=tarjeta en el .json bruto",
+        "ancho_en_caras": 2.25
+      }
+    }
+  },
+  "subtitulos": {
+    "estilo": "ab",
+    "max_palabras": 2,
+    "max_chars_3_palabras": 0,
+    "y_frac": {
+      "cara": 0.62,
+      "apilado": 0.5,
+      "blur": 0.42,
+      "hablante": 0.62,
+      "mosaico": 0.62,
+      "gaming": 0.396
+    },
+    "estilos": {
+      "limpio": {
+        "fuente": "Poppins ExtraBold",
+        "tam": 72,
+        "borde": 5,
+        "sombra": 6,
+        "sombra_alpha": 0,
+        "blur": 0,
+        "espaciado": 0,
+        "mayusculas": false
+      },
+      "bubble": {
+        "fuente": "Luckiest Guy",
+        "tam": 80,
+        "borde": 8,
+        "sombra": 3,
+        "blur": 0,
+        "mayusculas": false
+      }
+    },
+    "colores_hablantes": [
+      "FFFFFF",
+      "FF6AC1",
+      "4DA6FF",
+      "FF9A1F"
+    ],
+    "censura": [
+      "puta",
+      "puto",
+      "mierda",
+      "concha",
+      "pija",
+      "verga",
+      "pelotudo",
+      "forro",
+      "cogí",
+      "coger",
+      "cocaína",
+      "cocaina",
+      "falopa",
+      "matar",
+      "suicid"
+    ],
+    "voces": {
+      "activar": true,
+      "separacion_octavas": 0.45,
+      "min_palabras": 3,
+      "timbre_min": 1.0
+    },
+    "pop": {
+      "activar": true,
+      "desde": 70,
+      "pico": 115,
+      "subida_ms": 90,
+      "asiento_ms": 70
+    },
+    "paleta_voces": [
+      "FFE81F",
+      "3FD0FF",
+      "FF5FD2",
+      "7CFFB2",
+      "FF9A1F",
+      "B884FF",
+      "FF6B6B"
+    ],
+    "seguimiento": {
+      "activar": true,
+      "debajo": 0.45,
+      "suavizado": 0.2,
+      "y_max": 0.72,
+      "seguir_x": false,
+      "zona_quieta_px": 90,
+      "y_min": 0.42
+    },
+    "gta_accion": {
+      "palabras_seg_max": 1.2,
+      "unicas_max": 0.45,
+      "movimiento_min": 0.45,
+      "pulsos": true,
+      "pico_db": 8,
+      "_nota": "2026-11-20: GTA con poca charla o gritos repetidos va sin subtítulos (como @elcokismo). Forzar por clip: subtitulos true/false en el .json bruto"
+    }
+  },
+  "hook": {
+    "color": "53FC18",
+    "mostrar": false,
+    "duracion_s": 2.2,
+    "fuente": "Montserrat ExtraBold",
+    "tam": 76,
+    "y": 270,
+    "chars_por_linea": 20
+  },
+  "credito": {
+    "mostrar": false,
+    "fuente": "Montserrat ExtraBold",
+    "tam": 34,
+    "y": 1380
+  },
+  "punch_in": {
+    "activar": true,
+    "zoom": 1.12,
+    "rampa_s": 0.15,
+    "duracion_s": 1.3,
+    "buscar_en_ultimo_frac": 0.45
+  },
+  "audio": {
+    "lufs": -14,
+    "true_peak": -1,
+    "lra": 11
+  },
+  "portada": {
+    "color": "53FC18",
+    "tam": 92,
+    "y": 1250
+  },
+  "cierre_bn": {
+    "activar": true,
+    "dur_s": 1.8,
+    "max_palabras": 3,
+    "tolerancia_db": 3
+  },
+  "marca_agua": {
+    "mostrar": true,
+    "texto": "@clipardo",
+    "fuente": "Poppins ExtraBold",
+    "tam": 42,
+    "x": 60,
+    "y": 250,
+    "alpha": 0.5,
+    "brillo": {
+      "activar": true,
+      "color": "FFFFFF",
+      "alpha": 0.18,
+      "borde": 6,
+      "blur": 10
+    }
+  },
+  "remotion": {
+    "golpe": true,
+    "crf": 16,
+    "jpeg_calidad": 100,
+    "x264_preset": "slow"
+  },
+  "recortes": {
+    "activar": true,
+    "inicio_en_frase": true,
+    "max_inicio_s": 3.5,
+    "fin_en_frase": true,
+    "max_final_s": 6.0,
+    "reaccion_max_s": 1.5,
+    "repeticiones": true,
+    "reaccion_larga_max_s": 4.0,
+    "reaccion_deja_s": 2.8,
+    "objetivo_max_s": 40
+  },
+  "seguir": {
+    "activar": true,
+    "desde_fin_s": 3.4,
+    "dur_s": 2.8,
+    "usuario": "@clipardo",
+    "alturas": [
+      236,
+      520,
+      1180,
+      1380
+    ],
+    "choque_max_px": 40
+  },
+  "titulo": {
+    "activar": true,
+    "y": 200,
+    "y_gaming": 860
+  },
+  "sfx": {
+    "golpe_min_db": 2.5,
+    "volumen": {
+      "whoosh": 0.25,
+      "golpe": 0.18,
+      "pitido": 0.22,
+      "pop": 0.2,
+      "clic": 0.3
+    }
+  }
+}

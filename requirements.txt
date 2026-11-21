@@ -1,0 +1,10 @@
+# Python 3.12 (64 bits). Instalar dentro de .venv:  .venv\Scripts\python.exe -m pip install -r requirements.txt
+faster-whisper>=1.2      # transcripción (Whisper large-v3-turbo) con CTranslate2
+numpy>=2.0
+opencv-python-headless>=4.10   # caras, movimiento (detección de acción), autocorrector
+yt-dlp>=2026.1           # baja VODs y clips de Kick / Twitch / YouTube
+
+# GPU NVIDIA (opcional, recomendado): librerías CUDA 12 para faster-whisper.
+# Sin GPU funciona igual en CPU, pero transcribir un stream largo tarda mucho más.
+nvidia-cublas-cu12
+nvidia-cudnn-cu12

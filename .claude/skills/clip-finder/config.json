@@ -1,0 +1,108 @@
+{
+  "whisper": {
+    "model": "large-v3-turbo",
+    "compute_type": "int8_float16",
+    "beam_size": 5,
+    "language": "es"
+  },
+  "transcripcion": {
+    "completa": true,
+    "parte_s": 600,
+    "peso_risa": 3.0,
+    "peso_gatillo": 2.0,
+    "peso_exclamacion": 0.3
+  },
+  "candidatos": {
+    "cantidad": 30,
+    "pre_s": 45,
+    "post_s": 20,
+    "separacion_min_s": 90,
+    "max_por_hora": 4
+  },
+  "pesos_prefiltro": {
+    "audio": 1.0,
+    "audio_sin_chat": 0.6,
+    "texto": 1.5,
+    "chat": 1.2,
+    "emotes": 1.5,
+    "gatillos": 0.5
+  },
+  "chat_delay_s": 5,
+  "emotes": [
+    "KEKW",
+    "OMEGALUL",
+    "LUL",
+    "LULW",
+    "ICANT",
+    "KEKWait",
+    "Pog",
+    "PogChamp",
+    "monkaS",
+    "LMAO",
+    "LOL",
+    "XD",
+    "CLIP",
+    "CLIPEALO",
+    "CLIPIT"
+  ],
+  "gatillos": [
+    "no puede ser",
+    "me muero",
+    "no te puedo creer",
+    "no lo puedo creer",
+    "me retiro",
+    "ah re",
+    "cualquiera",
+    "mentira",
+    "me cago",
+    "que asco",
+    "callate",
+    "pedi perdon",
+    "que haces",
+    "estas loco",
+    "no me jodas",
+    "la puta madre",
+    "dios mio",
+    "chat",
+    "clip",
+    "me hizo cagar",
+    "no da",
+    "un desastre",
+    "que verguenza",
+    "no puedo mas"
+  ],
+  "descartar_si_menciona": [
+    "stake",
+    "codigo",
+    "bono",
+    "deposita",
+    "casino",
+    "apuesta",
+    "slot",
+    "rakeback"
+  ],
+  "seleccion": {
+    "top_n": 100,
+    "puntaje_min": 55,
+    "dur_min_s": 8,
+    "dur_max_s": 60
+  },
+  "puntaje_pesos": {
+    "hook": 25,
+    "contexto": 25,
+    "emocion": 20,
+    "rewatch": 15,
+    "share": 15
+  },
+  "calendario": {
+    "inicio": "2026-12-07",
+    "cambio_2_por_dia": "2026-12-21",
+    "horas_1_por_dia": [
+      "20:30"
+    ],
+    "horas_2_por_dia": [
+      "12:30",
+      "20:30"
+    ]
+  }
+}

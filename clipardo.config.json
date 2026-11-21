@@ -1,0 +1,14 @@
+{
+  "_nota": "Cuentas de Instagram donde publica el sistema. La clave (arg / todo) es interna: define el nombre de las variables en publicador/tokens.env (CLIPARDO_ARG_TOKEN, CLIPARDO_TODO_ID, ...). Cambiá solo 'usuario' por tus cuentas (sin @).",
+  "cuentas": {
+    "arg": {
+      "usuario": "tucuenta.arg",
+      "que_sube": "streamers locales (los de streamers_cuenta_local), voz rioplatense"
+    },
+    "todo": {
+      "usuario": "tucuenta.todo",
+      "que_sube": "todo lo demás, español neutro"
+    }
+  },
+  "streamers_cuenta_local": ["brunenger", "mernuel", "coker", "goncho", "zeko", "davooxeneize", "davo", "spreen", "lacobraaa", "coscu", "momo", "robleis"]
+}
